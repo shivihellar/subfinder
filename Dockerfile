@@ -7,7 +7,7 @@ WORKDIR /app/v2
 RUN go mod download
 RUN go build ./cmd/subfinder
 
-# Release
+# Release new
 FROM alpine:3.18.6
 RUN apk upgrade --no-cache \
     && apk add --no-cache bind-tools ca-certificates
